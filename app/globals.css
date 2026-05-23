@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F8F6F3;
+  --foreground: #0A0A0A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-hercules-black: #0A0A0A;
+  --color-hercules-gold: #C9A96E;
+  --color-hercules-gold-hover: #b59863;
+  --color-hercules-pearl: #F8F6F3;
+  --color-hercules-navy: #1B2A4A;
+  --color-hercules-gray: #6B7280;
+  --color-hercules-light: #E5E7EB;
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
